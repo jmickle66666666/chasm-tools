@@ -1,0 +1,40 @@
+                    ; 11
+  ANIMATION =                          ; Double-Barrel-Shot-Gun
+   1    0    50  42   16   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  =                          ; 12
+  ANIMATION =                          ; DeadMan Screem
+   3    0    50  42   20   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 13
+  ANIMATION =                          ; Photon
+   1    0   120  42   20   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 14
+  ANIMATION =                          ; Photon Min
+   1    0   120  42    5   0 1 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = gs_bomb.3o               ; 15
+  ANIMATION = weapon\gs_bomb.ani       ; Gross
+   1    1   120  42   25   1 0 0 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = sx_bomb.3o               ; 16
+  ANIMATION = weapon\sx_bomb.ani       ; Sphinx
+   1    0   120  42   90   0 1 1 1 1 0 16  ;
+                                      ===
+  3d_MODEL  = bat3.3o                  ; 17
+  ANIMATION = weapon\bat3.ani          ; Phantom
+   1    0   120  42   10   0 1 0 1 1 0 0  ;
+                                      ===
+  3d_MODEL  = md_bomb.3o               ; 18
+  ANIMATION = weapon\md_bomb.ani       ; Mega Destroyer
+   4    3   640  42  320   0 1 1 0 0 0 0   ;
+
+
+
+
+*****************************************************************
+*                                                               *
+*        SEPARATE PARTS DEFINITION                              *
+*                                                               *
+*****************

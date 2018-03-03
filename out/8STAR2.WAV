@@ -1,0 +1,102 @@
+
+  3d_MODEL  = grenade.3o               ; 10
+  ANIMATION = weapon\grenade.ani       ; Grenade
+   2    0   424  42   100  0 0 1 0 0 0 18  ;
+                                      ===
+  3d_MODEL  =                          ; 11
+  ANIMATION =                          ; Double-Barrel-Shot-Gun
+   1    0    50  42   16   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  =                          ; 12
+  ANIMATION =                          ; DeadMan Screem
+   3    0    50  42   20   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 13
+  ANIMATION =                          ; Photon
+   1    0   120  42   20   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 14
+  ANIMATION =                          ; Photon Min
+   1    0   120  42    5   0 1 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = gs_bomb.3o               ; 15
+  ANIMATION = weapon\gs_bomb.ani       ; Gross
+   1    1   120  42   25   1 0 0 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = sx_bomb.3o               ; 16
+  ANIMATION = weapon\sx_bomb.ani       ; Sphinx
+   1    0   120  42   90   0 1 1 1 1 0 16  ;
+                                      ===
+  3d_MODEL  = bat3.3o                  ; 17
+  ANIMATION = weapon\bat3.ani          ; Phantom
+   1    0   120  42   10   0 1 0 1 1 0 0  ;
+                                      ===
+  3d_MODEL  = md_bomb.3o               ; 18
+  ANIMATION = weapon\md_bomb.ani       ; Mega Destroyer
+   4    3   640  42  320   0 1 1 0 0 0 0   ;
+
+
+
+
+*****************************************************************
+*                                                               *
+*        SEPARATE PARTS DEFINITION                              *
+*                                                               *
+*****************************************************************
+
+
+[GIBS]
+71:         = gib1.3o
+72:         = gib2.3o
+73:         = gib3.3o
+76:         = gib_s1.3o  s:74
+75:         = gib_s2.3o
+76:         = gib_t1.3o  s:75
+77:         = gib_sp.3o  s:33
+78:         = stone.3o   s:45
+79:         = chip.3o
+80:         = sf_01.3o   s:45
+81:         = sf_02.3o   s:45
+82:         = sf_03.3o   s:45
+83:         = fragment.3o  s:45
+84:         = gib_03.3o
+#end
+
+
+*****************************************************************
+*                                                               *
+*        BMP BLOWS DEFINITION                                   *
+*                                                               *
+*****************************************************************
+
+[BLOWS]
+19 ; GLASS,    HalfSize, Smooking, Looped, Gravity, Jump, LightOn, FileName
+2  1 0 0 0 0 1 bullet.obj
+2  1 0 0 1 1 1 s.obj
+1  0 0 0 0 0 1 point.obj
+1  1 0 1 1 1 1 glass.obj
+0  0 1 1 1 1 0 wood.obj
+2  1 0 0 1 1 0 blood.obj
+2  1 0 1 1 1 0 bloodb.obj
+0  0 1 1 1 1 0 bbarel.obj
+77 0 0 0 0 0 1 exp.obj
+1  0 0 0 0 0 0 smoke.obj
+1  0 0 0 0 0 0 dust.obj
+1  0 0 0 0 0 0 smoke2.obj
+1  1 0 0 0 0 0 sm3.obj
+1  1 1 0 1 0 1 point.obj
+1  0 0 0 0 0 0 magic.obj
+1  1 1 0 1 0 0 bloop.obj
+1  0 0 0 0 0 0 smoke5.obj
+1  1 0 0 1 0 0 spark.obj
+4  1 0 0 0 0 0 gren.obj
+
+[BMP_OBJECTS]
+2 [Light Glass  Half  Z  "FileName"]
+      0     0    1    0 0 0 flamed.obj
+      1     0    1    0 0 0 flamel.obj
+
+
+
+
+***********************

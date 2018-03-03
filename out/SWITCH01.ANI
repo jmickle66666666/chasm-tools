@@ -1,0 +1,79 @@
+******************************************************
+
+
+[GIBS]
+71:         = gib1.3o
+72:         = gib2.3o
+73:         = gib3.3o
+76:         = gib_s1.3o  s:74
+75:         = gib_s2.3o
+76:         = gib_t1.3o  s:75
+77:         = gib_sp.3o  s:33
+78:         = stone.3o   s:45
+79:         = chip.3o
+80:         = sf_01.3o   s:45
+81:         = sf_02.3o   s:45
+82:         = sf_03.3o   s:45
+83:         = fragment.3o  s:45
+84:         = gib_03.3o
+#end
+
+
+*****************************************************************
+*                                                               *
+*        BMP BLOWS DEFINITION                                   *
+*                                                               *
+*****************************************************************
+
+[BLOWS]
+19 ; GLASS,    HalfSize, Smooking, Looped, Gravity, Jump, LightOn, FileName
+2  1 0 0 0 0 1 bullet.obj
+2  1 0 0 1 1 1 s.obj
+1  0 0 0 0 0 1 point.obj
+1  1 0 1 1 1 1 glass.obj
+0  0 1 1 1 1 0 wood.obj
+2  1 0 0 1 1 0 blood.obj
+2  1 0 1 1 1 0 bloodb.obj
+0  0 1 1 1 1 0 bbarel.obj
+77 0 0 0 0 0 1 exp.obj
+1  0 0 0 0 0 0 smoke.obj
+1  0 0 0 0 0 0 dust.obj
+1  0 0 0 0 0 0 smoke2.obj
+1  1 0 0 0 0 0 sm3.obj
+1  1 1 0 1 0 1 point.obj
+1  0 0 0 0 0 0 magic.obj
+1  1 1 0 1 0 0 bloop.obj
+1  0 0 0 0 0 0 smoke5.obj
+1  1 0 0 1 0 0 spark.obj
+4  1 0 0 0 0 0 gren.obj
+
+[BMP_OBJECTS]
+2 [Light Glass  Half  Z  "FileName"]
+      0     0    1    0 0 0 flamed.obj
+      1     0    1    0 0 0 flamel.obj
+
+
+
+
+*****************************************************************
+*                                                               *
+*        SOUNDS DEFINITION                                      *
+*                                                               *
+*****************************************************************
+
+[SOUNDS]
+ 00: thunder     = thund0.raw
+ 01: Scr. Click  = scrclic.sfx
+ 02: MenuScrol   = 8menuscr.wav
+ 03: MenuOn      = menuent2.wav
+ 04: MenuCh      = 8menumov.wav
+ 05: MenuSelect  = 8menuesc.wav
+ 06: Ammo fall   = box_drop.wav
+ 07:             = meetexp.wav  V:96
+ 08: Drops       = 8drop.wav
+ 09: Bloop       = bloop.wav
+ 10: Wsteps      = watstep1.wav
+ 11:             = watshoot.wav  v:40
+ 12: Jump        = jump.wav      v:96
+ 13:             = jump_no.wav   v:96
+ 14: St

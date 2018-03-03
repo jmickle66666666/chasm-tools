@@ -1,0 +1,124 @@
+or3.ani
+  0     0       -1     0    124     0    0    0 0   helmet1.3o       helmet1.ani
+  0     0       -1     0     0      0    0    0 0   dummy.3o
+  0     0       -1     0    102     0    0    0 0   life.3o
+  0     0       -1     0    120     0    0    0 0   biglife.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   mine.3o
+
+
+*****************************************************************
+*                                                               *
+*        WEAPONS DEFINITION                                     *
+*                                                               *
+*****************************************************************
+
+[WEAPONS]
+8                ; RType, RldTm, YSh, RZ0, DAm, Limit, Start,   RCount
+MODEL=ogun6.3o
+STAT =ogun6.ani
+SHOOT=ogatck.ani
+                       3   86  32  180  20   120  25      1
+MODEL=rif_h5.3o
+STAT =rif_h2.ani
+SHOOT=rif_h1f.ani
+                      11  128  42  180  10   50   10      4
+MODEL=v8h.3o
+STAT =vstat7h.ani
+SHOOT=vfire7h.ani
+                       7   11  32  180  10  200   50      2
+MODEL=disk.3o
+STAT =dstat.ani
+SHOOT=dattack.ani
+                       0   26  15  440  20   50   20      1
+MODEL=at3.3o
+STAT =at1_stat.ani
+SHOOT=at1_fire.ani
+                       4   60  32  320  10   40   20      1
+MODEL=gr4.3o
+STAT =gr_stat.ani
+SHOOT=gr_fire.ani
+                      10  112  32  140   5   50    5      1
+MODEL=mineh.3o
+STAT =m_stat.ani
+SHOOT=m_fire.ani
+                       0  112  32  140   1   10    0      1
+MODEL=md.3o
+STAT =md_stat.ani
+SHOOT=md_fire.ani
+                      18  144  32  180   1   10    2      1
+
+
+
+*****************************************************************
+*                                                               *
+*        3D ROCKETS DEFINITION                                  *
+*                                                               *
+*****************************************************************
+
+[ROCKETS]
+19 [BW  GF  Ard  CRd  Pwr (Rfl FBright Light Auto Auto2 Fast Smoke) ]
+
+  3d_MODEL  = disk.3o                  ;
+  ANIMATION = weapon\disk.ani          ; Hero Golden Disk
+   1    0   120  42   30   0 0 0 0 0 0 0   ; 0
+                                      ===
+  3d_MODEL  = axe.3o                   ; Axe
+  ANIMATION = weapon\axe.ani           ; 1
+   1    0   120  42   42   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = sword.3o                 ; 2
+  ANIMATION = weapon\sword.ani         ; Sceleton-Sword
+   1    0   120  42   40   0 0 1 0 0 0 11  ;
+                                      ===
+  3d_MODEL  =                          ; 3
+  ANIMATION =                          ; Shoot-Gun
+   1    0    50  42   25   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = arrow.3o                 ; 4
+  ANIMATION = weapon\arrow.ani         ; Arrow-Gun
+   1    0   120  42   40   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = jdisk.3o                 ; 5
+  ANIMATION = weapon\jdisk.ani         ; Joker's disk
+   1    0   120  42   25   0 0 0 1 0 0 0   ;
+                                      ===
+  3d_MODEL  = 3arow.3o                 ; 6
+  ANIMATION = weapon\3arow_.ani        ; Wing-Man
+   1    0   120  42   5    0 1 1 1 0 0 14   ;
+                                      ===
+  3d_MODEL  =                          ; 7
+  ANIMATION =                          ; Volcano Bullet
+   1    0    50  42   5    0 0 0 0 0 0 0    ;
+                                      ===
+  3d_MODEL  = ft_bomb.3o               ; 8
+  ANIMATION = weapon\ft_bomb.ani       ; Faust Rocket
+   2    0   320  42   100  0 0 1 1 0 0 16  ;
+                                      ===
+  3d_MODEL  = arrowl.3o                ; 9
+  ANIMATION = weapon\arrowl.ani        ; Laser
+   1    0   120  42   20   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = grenade.3o               ; 10
+  ANIMATION = weapon\grenade.ani       ; Grenade
+   2    0   424  42   100  0 0 1 0 0 0 18  ;
+                                      ===
+  3d_MODEL  =                          ; 11
+  ANIMATION =                          ; Double-Barrel-Shot-Gun
+   1    0    50  42   16   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  =                          ; 12
+  ANIMATION =                          ; DeadMan Screem
+   3    0    50  42   20   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 13
+  ANIMATION =                          ; Photon
+   1    0   120  42   20   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 14
+  ANIMATION =                          ; Photon Min
+   1    0   120  42    5   0 1 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = gs_bomb.3o               ; 15
+  ANIMATION = weapon\gs_bomb.a

@@ -1,0 +1,224 @@
+    0    0    0 0   dummy.3o
+  0     1       -1     0      8     0    0    0 0   w_md.3o          w_md.ani
+;========== ammo ==================================================
+  0     0       -1     0     21     0    0    0 0   bullets.3o
+  0     0       -1     0     22     0    0    0 0   gbbull.3o
+  0     0       -1     0     35     0    0    0 0   vbox.3o
+  0     0       -1     0     41     0    0    0 0   pila1.3o
+  0     0       -1     0     52     0    0    0 0   arrows.3o
+  0     0       -1     0     62     0    0    0 0   gr_box.3o
+  0     0       -1     0     74     0    0    0 0   omine1.3o
+  0     0       -1     0     82     0    0    0 0   md_box.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   hole.3o
+;=========== things ===============================================
+  0     0       -1     0    133     0    0    0 0   chojin.3o        chojin.ani
+  0     0       -1     0    132     0    0    0 0   shield.3o        shield.ani
+  0     0       -1     0    131     0    0    0 0   invis.3o         invis.ani
+  0     0       -1     0    128     0    0    0 0   armor3.3o        armor3.ani
+  0     0       -1     0    124     0    0    0 0   helmet1.3o       helmet1.ani
+  0     0       -1     0     0      0    0    0 0   dummy.3o
+  0     0       -1     0    102     0    0    0 0   life.3o
+  0     0       -1     0    120     0    0    0 0   biglife.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   mine.3o
+
+
+*****************************************************************
+*                                                               *
+*        WEAPONS DEFINITION                                     *
+*                                                               *
+*****************************************************************
+
+[WEAPONS]
+8                ; RType, RldTm, YSh, RZ0, DAm, Limit, Start,   RCount
+MODEL=ogun6.3o
+STAT =ogun6.ani
+SHOOT=ogatck.ani
+                       3   86  32  180  20   120  25      1
+MODEL=rif_h5.3o
+STAT =rif_h2.ani
+SHOOT=rif_h1f.ani
+                      11  128  42  180  10   50   10      4
+MODEL=v8h.3o
+STAT =vstat7h.ani
+SHOOT=vfire7h.ani
+                       7   11  32  180  10  200   50      2
+MODEL=disk.3o
+STAT =dstat.ani
+SHOOT=dattack.ani
+                       0   26  15  440  20   50   20      1
+MODEL=at3.3o
+STAT =at1_stat.ani
+SHOOT=at1_fire.ani
+                       4   60  32  320  10   40   20      1
+MODEL=gr4.3o
+STAT =gr_stat.ani
+SHOOT=gr_fire.ani
+                      10  112  32  140   5   50    5      1
+MODEL=mineh.3o
+STAT =m_stat.ani
+SHOOT=m_fire.ani
+                       0  112  32  140   1   10    0      1
+MODEL=md.3o
+STAT =md_stat.ani
+SHOOT=md_fire.ani
+                      18  144  32  180   1   10    2      1
+
+
+
+*****************************************************************
+*                                                               *
+*        3D ROCKETS DEFINITION                                  *
+*                                                               *
+*****************************************************************
+
+[ROCKETS]
+19 [BW  GF  Ard  CRd  Pwr (Rfl FBright Light Auto Auto2 Fast Smoke) ]
+
+  3d_MODEL  = disk.3o                  ;
+  ANIMATION = weapon\disk.ani          ; Hero Golden Disk
+   1    0   120  42   30   0 0 0 0 0 0 0   ; 0
+                                      ===
+  3d_MODEL  = axe.3o                   ; Axe
+  ANIMATION = weapon\axe.ani           ; 1
+   1    0   120  42   42   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = sword.3o                 ; 2
+  ANIMATION = weapon\sword.ani         ; Sceleton-Sword
+   1    0   120  42   40   0 0 1 0 0 0 11  ;
+                                      ===
+  3d_MODEL  =                          ; 3
+  ANIMATION =                          ; Shoot-Gun
+   1    0    50  42   25   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = arrow.3o                 ; 4
+  ANIMATION = weapon\arrow.ani         ; Arrow-Gun
+   1    0   120  42   40   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = jdisk.3o                 ; 5
+  ANIMATION = weapon\jdisk.ani         ; Joker's disk
+   1    0   120  42   25   0 0 0 1 0 0 0   ;
+                                      ===
+  3d_MODEL  = 3arow.3o                 ; 6
+  ANIMATION = weapon\3arow_.ani        ; Wing-Man
+   1    0   120  42   5    0 1 1 1 0 0 14   ;
+                                      ===
+  3d_MODEL  =                          ; 7
+  ANIMATION =                          ; Volcano Bullet
+   1    0    50  42   5    0 0 0 0 0 0 0    ;
+                                      ===
+  3d_MODEL  = ft_bomb.3o               ; 8
+  ANIMATION = weapon\ft_bomb.ani       ; Faust Rocket
+   2    0   320  42   100  0 0 1 1 0 0 16  ;
+                                      ===
+  3d_MODEL  = arrowl.3o                ; 9
+  ANIMATION = weapon\arrowl.ani        ; Laser
+   1    0   120  42   20   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = grenade.3o               ; 10
+  ANIMATION = weapon\grenade.ani       ; Grenade
+   2    0   424  42   100  0 0 1 0 0 0 18  ;
+                                      ===
+  3d_MODEL  =                          ; 11
+  ANIMATION =                          ; Double-Barrel-Shot-Gun
+   1    0    50  42   16   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  =                          ; 12
+  ANIMATION =                          ; DeadMan Screem
+   3    0    50  42   20   0 0 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 13
+  ANIMATION =                          ; Photon
+   1    0   120  42   20   0 1 1 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = photon.3o                ; 14
+  ANIMATION =                          ; Photon Min
+   1    0   120  42    5   0 1 0 0 0 0 0   ;
+                                      ===
+  3d_MODEL  = gs_bomb.3o               ; 15
+  ANIMATION = weapon\gs_bomb.ani       ; Gross
+   1    1   120  42   25   1 0 0 0 0 1 0   ;
+                                      ===
+  3d_MODEL  = sx_bomb.3o               ; 16
+  ANIMATION = weapon\sx_bomb.ani       ; Sphinx
+   1    0   120  42   90   0 1 1 1 1 0 16  ;
+                                      ===
+  3d_MODEL  = bat3.3o                  ; 17
+  ANIMATION = weapon\bat3.ani          ; Phantom
+   1    0   120  42   10   0 1 0 1 1 0 0  ;
+                                      ===
+  3d_MODEL  = md_bomb.3o               ; 18
+  ANIMATION = weapon\md_bomb.ani       ; Mega Destroyer
+   4    3   640  42  320   0 1 1 0 0 0 0   ;
+
+
+
+
+*****************************************************************
+*                                                               *
+*        SEPARATE PARTS DEFINITION                              *
+*                                                               *
+*****************************************************************
+
+
+[GIBS]
+71:         = gib1.3o
+72:         = gib2.3o
+73:         = gib3.3o
+76:         = gib_s1.3o  s:74
+75:         = gib_s2.3o
+76:         = gib_t1.3o  s:75
+77:         = gib_sp.3o  s:33
+78:         = stone.3o   s:45
+79:         = chip.3o
+80:         = sf_01.3o   s:45
+81:         = sf_02.3o   s:45
+82:         = sf_03.3o   s:45
+83:         = fragment.3o  s:45
+84:         = gib_03.3o
+#end
+
+
+*****************************************************************
+*                                                               *
+*        BMP BLOWS DEFINITION                                   *
+*                                                               *
+*****************************************************************
+
+[BLOWS]
+19 ; GLASS,    HalfSize, Smooking, Looped, Gravity, Jump, LightOn, FileName
+2  1 0 0 0 0 1 bullet.obj
+2  1 0 0 1 1 1 s.obj
+1  0 0 0 0 0 1 point.obj
+1  1 0 1 1 1 1 glass.obj
+0  0 1 1 1 1 0 wood.obj
+2  1 0 0 1 1 0 blood.obj
+2  1 0 1 1 1 0 bloodb.obj
+0  0 1 1 1 1 0 bbarel.obj
+77 0 0 0 0 0 1 exp.obj
+1  0 0 0 0 0 0 smoke.obj
+1  0 0 0 0 0 0 dust.obj
+1  0 0 0 0 0 0 smoke2.obj
+1  1 0 0 0 0 0 sm3.obj
+1  1 1 0 1 0 1 point.obj
+1  0 0 0 0 0 0 magic.obj
+1  1 1 0 1 0 0 bloop.obj
+1  0 0 0 0 0 0 smoke5.obj
+1  1 0 0 1 0 0 spark.obj
+4  1 0 0 0 0 0 gren.obj
+
+[BMP_OBJECTS]
+2 [Light Glass  Half  Z  "FileName"]
+      0     0    1    0 0 0 flamed.obj
+      1     0    1    0 0 0 flamel.obj
+
+
+
+
+*****************************************************************
+*                                                               *
+*        SOUND

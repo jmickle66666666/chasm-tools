@@ -1,0 +1,13 @@
+0   arrows.3o
+  0     0       -1     0     62     0    0    0 0   gr_box.3o
+  0     0       -1     0     74     0    0    0 0   omine1.3o
+  0     0       -1     0     82     0    0    0 0   md_box.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   dummy.3o
+  0     0       -1     0      0     0    0    0 0   hole.3o
+;=========== things ===============================================
+  0     0       -1     0    133     0    0    0 0   chojin.3o        chojin.ani
+  0     0       -1     0    132     0    0    0 0   shield.3o        shield.ani
+  0     0       -1     0    131     0    0    0 0   invis.3o         invis.ani
+  0     0   

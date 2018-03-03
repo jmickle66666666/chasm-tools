@@ -1,0 +1,12 @@
+"CSid" -- header
+2 bytes -- file count
+
+list of directory entries
+1 - name size
+n - name
+3 - unknown
+2 - file size
+2 - unknown
+2 - data position
+2 - unknown
+
