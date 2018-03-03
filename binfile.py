@@ -29,6 +29,12 @@ class BinFile:
                 self.directory[i].data = f.read(self.directory[i].size)
                 self.directory[i].to_file("out/")
 
+    def get_entry(self, name):
+        for i in range(len(self.directory)):
+            if self.directory[i].name == name:
+                return self.directory[i].data
+        return None
+
     @staticmethod
     def read_directory_entry(data):
         name_size = int.from_bytes(data.read(1), 'little')
