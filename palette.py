@@ -14,3 +14,6 @@ class Palette:
         for i in range(256):
             img.putpixel((i % 16, i // 16), self.colors[i])
         return img
+
+    def get_color(self, index):
+        return self.colors[index]
