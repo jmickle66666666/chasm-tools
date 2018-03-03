@@ -4,7 +4,7 @@
 list of directory entries
 1 - name size
 n - name
-3 - unknown
+x - pad name size to 12 bytes
 2 - file size
 2 - unknown
 2 - data position

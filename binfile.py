@@ -1,17 +1,13 @@
 class Datafile:
-    def __init__(self, name, size, position, data):
+    def __init__(self, name, size, position):
         self.name = name
         self.size = size
         self.position = position
-        self.data = data
-
-    def get_data(self):
-        self.data.seek(self.position)
-        return self.data.read(self.size)
+        self.data = None
 
     def to_file(self, path):
         with open(path + self.name, "wb") as f:
-            f.write(self.get_data())
+            f.write(self.data)
 
 
 class BinFile:
@@ -29,6 +25,8 @@ class BinFile:
                 self.directory.append(self.read_directory_entry(f))
 
             for i in range(self.num_files):
+                f.seek(self.directory[i].position)
+                self.directory[i].data = f.read(self.directory[i].size)
                 self.directory[i].to_file("out/")
 
     @staticmethod
@@ -36,8 +34,6 @@ class BinFile:
         name_size = int.from_bytes(data.read(1), 'little')
         name = data.read(name_size).decode('utf-8')
         data.read(12 - name_size)
-        file_size = int.from_bytes(data.read(2), 'little')
-        data.read(2)
-        file_position = int.from_bytes(data.read(2), 'little')
-        data.read(2)
-        return Datafile(name, file_size, file_position, data)
+        file_size = int.from_bytes(data.read(4), 'little')
+        file_position = int.from_bytes(data.read(4), 'little')
+        return Datafile(name, file_size, file_position)
