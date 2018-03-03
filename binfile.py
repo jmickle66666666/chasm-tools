@@ -4,6 +4,7 @@ class Datafile:
         self.size = size
         self.position = position
         self.data = None
+        self.ext = name[name.find('.')+1:]
 
     def to_file(self, path):
         with open(path + self.name, "wb") as f:

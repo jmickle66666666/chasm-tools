@@ -1,5 +1,8 @@
 out/*
+img/*
 CSM.BIN
 .idea/*
 .idea/workspace.xml
 .idea/workspace.xml
+.DS_STORE
+.DS_Store
